@@ -18,3 +18,5 @@
     owner: prod-team
     repository: https://github.com/Chukwuemeka-Test-Org/test-repo-0-174769878_herein
     readme: file://../README.md
+  relations:
+    organization: Chukwuemeka-Test-Org
