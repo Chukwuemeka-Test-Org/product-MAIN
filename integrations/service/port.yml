@@ -6,6 +6,9 @@
     owner: dev-team
     repository: https://github.com/Chukwuemeka-Test-Org/test-repo-0-174769878_herein
     readme: file://../README.md
+    from_repository: 
+  relations:
+    organization: Chukwuemeka-Test-Org
 
 - identifier: example-service
   title: Example Service
