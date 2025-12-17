@@ -1,6 +1,6 @@
 identifier: myTag
 title: My Tag
-blueprint: tag
+blueprint: githubTag
 properties:
   commit_sha: sha2323244
 relations:
