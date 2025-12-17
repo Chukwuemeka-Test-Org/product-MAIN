@@ -1,7 +1,0 @@
-identifier: myTagTests
-title: My Tag Tesstt
-blueprint: githubTag
-properties:
-  commit_sha: sha2323244sa
-relations:
-  repository: product-MAIN
