@@ -6,4 +6,4 @@ properties:
   customBranchesPolicies: true
   protectedBranches: false
 relations:
-  repository: product-MAIs
+  repository: product-MAIN
