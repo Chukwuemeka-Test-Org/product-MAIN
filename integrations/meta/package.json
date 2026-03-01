@@ -1,5 +1,7 @@
 {
   "dependencies": {
+    "name": "idString",
+    "data": "hey",
     "lodash": "4.17.11"
   }
 }
