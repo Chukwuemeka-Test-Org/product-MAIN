@@ -1,7 +1,7 @@
 openapi: 3.0.0
 info:
   title: github-ocean-schemas-repro
-  version: 2026-03-25
+  version: 2026-03-26T09:30:56Z
 servers:
   - url: https://example.com
 paths:
