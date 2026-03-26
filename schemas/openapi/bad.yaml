@@ -7,10 +7,10 @@ servers:
 
 paths:
   /playlist_service/playlists/by_track_ids/:
+    summary: playlist endpoints
     post:
       tags:
         - playlist_service
-      summary: null
       operationId: playlist_service_playlists_by_track_ids_create
       description: |
         A custom endpoint for retrieving playlists containing specified tracks.
