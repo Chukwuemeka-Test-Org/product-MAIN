@@ -1,14 +1,51 @@
 openapi: 3.0.0
 info:
-  title: github-ocean-schemas-repro
+  title: trantor-api
   version: 2026-03-26T09:30:56Z
 servers:
-  - url: https://example.com
+  - url: http://localhost:8001
+
 paths:
-  /hello:
-    get:
-      summary: Hello
-      operationId: getHello
+  /playlist_service/playlists/by_track_ids/:
+    post:
+      tags:
+        - playlist_service
+      summary: null
+      operationId: playlist_service_playlists_by_track_ids_create
+      description: |
+        A custom endpoint for retrieving playlists containing specified tracks.
+      parameters:
+        - in: header
+          name: Epidemic-User-Id
+          schema:
+            type: string
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/PlaylistsByTrackIdsRequest"
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: "#/components/schemas/PlaylistsByTrackIdsRequest"
+          multipart/form-data:
+            schema:
+              $ref: "#/components/schemas/PlaylistsByTrackIdsRequest"
       responses:
         "200":
-          description: OK
+          description: ""
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/TrackIdPlaylists"
+
+components:
+  schemas:
+    PlaylistsByTrackIdsRequest:
+      type: object
+      additionalProperties: true
+    TrackIdPlaylists:
+      type: object
+      additionalProperties: true
