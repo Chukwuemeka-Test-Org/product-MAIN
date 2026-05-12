@@ -1,4 +1,4 @@
-name: Workflow 94 new
+name: Workflow 94 next
 on: [push]
 jobs:
   build_94:
