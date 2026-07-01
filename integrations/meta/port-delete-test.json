@@ -1,6 +1,0 @@
-{
-  "entries": [
-    { "id": "entry-alpha", "label": "Alpha", "value": "v1" },
-    { "id": "entry-beta", "label": "Beta", "value": "v2" }
-  ]
-}
